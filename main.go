@@ -34,7 +34,7 @@ func main() {
 	}
 
 	fmt.Println("Path:", *path)
-	fmt.Println("Name:", *name)
+	fmt.Println("Find:", *name)
 
 	_, errorPath := os.Stat(*path)
 
