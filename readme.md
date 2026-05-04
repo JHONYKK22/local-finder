@@ -2,7 +2,7 @@
 ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
 
 This is a small program that uses ***goroutines*** and ***<span style="color:#00ADD8">Go</span> channels*** to traverse directories concurrently and search for ***files/folders*** whose names match or are similar to the specified term. 
-
+> [!NOTE]
 >- It works for Windows, Linux and Mac.
 
 <br><br>
