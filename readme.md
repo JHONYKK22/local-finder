@@ -5,10 +5,10 @@ This is a small program that uses ***goroutines*** and ***<span style="color:#00
 > [!NOTE]
 >- It works for Windows, Linux and Mac.
 
-<br><br>
+<br>
 
 
-To see the options, run:
+- To see the options, run:
 ```sh
 go run .\main.go -help
 ```
@@ -22,7 +22,7 @@ Or
 
 
 
-If you don't specify the path, default path is current directory
+- If you don't specify the path, default path is current directory
 
 ```sh
 ./local-finder-build --find "name" 
@@ -39,12 +39,12 @@ Or
 
 ---
 
-If you want to keep the results in a file, run
+- If you want to keep the results in a file, run
 
 ```sh
 go run .\main.go -find="name" -path "initial_path" > result_file_name.txt
 ```
-or
+Or
 
 ``` sh
 ./local-finder-build --find "name" --path="initial_path" > result_file_name.txt
@@ -53,7 +53,7 @@ or
 
 ---
 
-If you want create all the builds for Linux, mac and windows, run:
+- If you want create all the builds for Linux, mac and windows, run:
 
 ``` sh
 ./builder.sh
