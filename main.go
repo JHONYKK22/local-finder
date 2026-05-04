@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"local-finder.com/finder"
+	"github.com/JHONYKK22/local-finder/finder"
 )
 
 func main() {
