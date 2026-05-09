@@ -8,18 +8,6 @@ import (
 	"os"
 	"fmt"
 )
-func skipDir(d fs.DirEntry) (skipDir bool) {
-
-	name := d.Name()
-
-	_, exists := namesToSkip[name]
-
-	if exists {
-		skipDir = true
-	}
-
-	return
-}
 
 func WalkDirConcurrent(root string, nameToFind string) (int, error) {
 
@@ -82,6 +70,19 @@ func WalkDirConcurrent(root string, nameToFind string) (int, error) {
 	}
 
 	return total, nil
+}
+
+func skipDir(d fs.DirEntry) (skipDir bool) {
+
+	name := d.Name()
+
+	_, exists := namesToSkip[name]
+
+	if exists {
+		skipDir = true
+	}
+
+	return
 }
 
 var namesToSkip = map[string]string{
